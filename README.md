@@ -56,6 +56,10 @@ PUT /todolist/id
 
 PUT /todolist/id/status
 
+### Delete Task
+
+DELETE /todolist/id
+
 ---
 
 Body exemplo:
