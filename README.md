@@ -38,5 +38,41 @@ The API allows to do simple *CRUD* oprations as: **Create, delete and update**.
 
 ### Create Task
 
+POST /todolist
+
+### Find all tasks 
+
 GET /todolist
 
+### Find Task by ID
+
+GET /todolis/id
+
+### Update Task
+
+PUT /todolist/id
+
+### Update Task Status
+
+PUT /todolist/id/status
+
+---
+
+Body exemplo:
+
+json
+{
+  "name": "Estudar Docker",
+  "description": "Aprender containerização",
+  "status": false
+}
+
+---
+
+# How excute Docker
+
+- **docker build -t todo-api .**
+
+- docker run -p 8080:8080 todo-api
+
+your API will be avaliable at: http://localhost:8080
