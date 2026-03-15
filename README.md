@@ -62,12 +62,18 @@ DELETE /todolist/id
 
 ---
 
-Body exemplo:
+Body example:
 
 json
 {
   "name": "Estudar Docker",
-  "description": "Aprender containerização",
+  "description": "Aprender containerização"
+}
+
+Status body example:
+
+json
+{
   "status": false
 }
 
@@ -80,3 +86,6 @@ json
 - docker run -p 8080:8080 todo-api
 
 your API will be avaliable at: http://localhost:8080
+
+your H2 DB will be avaliable at:
+http://localhost:8080/h2-console/
